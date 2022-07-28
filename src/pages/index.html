@@ -1,153 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+<html lang="pl">
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> 
+    <link href="main.css" rel="stylesheet" type="text/css"> 
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
+  <!--reset stylow niezbyt spoko
+  <style>
+      *{
+          margin:0;
+          padding:0;
+          outline:none;
+          font-size:16px;
+          font-weight: normal;
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+      }
+      ul, ol, li {
+          list-style-type:none;
 
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
+      }
+      </style>
+      -->
+      
+  
+    <header class=head__header id=top >
+        <button class="hamburger hamburger--js" aria-label="Otwórz Menu" >🍔</button>
+        <nav class="head__header--nav navigation--js">
+            <a class=naviagtion__link href="/html/lol test.html">a kurwa</a>
+            <a class=naviagtion__link href="index.html">strona główna</a>
+            <a class=naviagtion__link href="/html/cool.html">cool</a>
+            <a class=naviagtion__link href="/html/flex.html">flex</a>
+            <a class=naviagtion__link href="/html/forms.html">forms</a>
+            <a class=naviagtion__link href="/html/grid.html">grid</a>
+            <a class=naviagtion__link href="/html/grid_layout.html">grid_layout</a>
+            <a class=naviagtion__link href="#"><div id="buttonOne">
+                <div id="linkedinB">
+                    <img src="../assets/img/linkedinB.png" width="40" height="40">
+                </div>
+          </div></a>
+          <input class="input">
+        </nav>
+
+    </header>
+    
+</head>
+
+<body class=body>
+    <main class="main">
+
+        <h1 class=head__mainer>Moja strona</h1>
+        <button class="action--js1">klikacz console loga</button>
+        <button class="action--js">Zmień nagłowek</button>
+        <h1 class = main_heading--js>
+            <p> 
+                a cóż tooo
+            </p>
+
+        </h1>
+        <p class="test">testowanie scss czy działa czy nie działa<span class="test__special">serdelkować kiełbaski</span></p>
+            
+        <Section class=body__section>
+            <img class=body__picture src="../assets/img/20190816_125027.jpg" alt="jazAnio" width="250" height"500"> </img>
+            <h2 class=body__welcomeBox>
+           Witaj na mojej pierwszej stronie internetowej 
+            </h2>
+                <a class=body__link href="C:/dev/lol test.html#robota">o mnie</a>
+            </nav>
+            </h2>
+
+        </Section>
+        <p class="body__p">
+            trelelememeleele
+        </p>
+        <div class="grid">
+
+        <section class=body__section>
+            <h3 class=body__section--h3> to jest header3 checking </h3>
+            to jest tekst w sekcji
+        </section>
+        <p class=" body__section--h3 eek-summary_description--js">
+            trelelememeleele
+        </p>
+        <p class="body__section--h3 body__h2__mondayCodeSesh">
+            trelelememeleele
+        </p>
+        <p class="paragraph">
+            Fajne korzystac z Emmeta za pomoca pisania znacznik.klasa polecam</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <p class="paragraph">Kolejny bloczek</p>
+        <section class=body__section>
+            <h3 class=body__section--h3> zmiana do commita    ssdsdds</h3>
+            <p class=body__section>
+                <i class="body__section--h3 body__section--i">to jest tekst w paragrafie</i>
+                <br>
+                <b class="body__section--h3 body__section--b">to jest pogrubione</b>
+                <br>
+                <br>
+                <strong class="body__section--h3 body__Section--strong">to jest wyróżnione znacznikiem strong</strong>
+                <br>
+                <em class="body__section--h3 body__Section--em">to jest wyróżnione znaczikiem m</em>
+            </p>
+        </section>
+
+        <section class=body__section>
+
+            <h4 class="body__section--h3 body__section--h4">to jest header 4</h4>
+            <article class="body__section--h3 body__section--article">
+                to jest article
+            </article>
+        </section>
+
+        <section class="notes" id="notatki">
+            <h2 class="notes_heading">
+                Notatki z WTF:Co ten frontend </h2>
+                <article class="week-summary">
+                    <h3 class="week-summary_title"> Odrabianie pracy domowej </h3>
+                    <p class="week-summary_description">Poszło mi całkiem spoko :) </p>
+                    <p class="week-summary_description week-summary_description--js"></p>
+                </article>
+            
+        </section>
+
+        <section>
+            <h4>Lista fajnych znaczników</h4>
+            <ul class="list">
+                <li>UL</li>
+                <li>OL</li>
+                <li>SECTION</li>
+            </ul>
+            <H4>ta sama lista tylko OL</H4>
+            <OL class="list2">
+                <li class="list_item">UL</li>
+                <li class="list_item">OL</li>
+                <li class="list_item">SECTION</li>
+            </OL>
+            <H4>co to SECTION?</H4>
+            <SECTION>
+                <li class="list2_item">hmm</li>
+                <li class="list2_item">ciekawe</li>
+                <li class="list2_item">co to robi</li>
+            </SECTION>
+        </section>
     </div>
-  </body>
+
+        <footer class=body__footer>
+
+            <p class=body__footer--p>
+        
+                <a class=body__footer--p--upper href="#top">przejdź na górę strony</a>
+                <a class=body__footer--p-youtube href="https://www.youtube.com/user/1Matrixer"> mój youtube</a>
+            </p>
+        </footer>
+ </main>
+ <script class=body__script src="/js/js.js"></script>
+
+ <script type='module' class=body__script src="/js/test.js"></script>
+</body>
+
 </html>

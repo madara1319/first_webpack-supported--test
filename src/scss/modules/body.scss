@@ -1,0 +1,105 @@
+.body {
+    padding: 6px;
+    max-width: 900px;
+    background-color: #b8d0eb;
+    margin: 0 auto;
+    background-image: linear-gradient(163deg, #92bbd1 0%, #ffffff 100%);
+    &__welcomeBox {
+      color: greenyellow;
+    }
+    &__footer--p-youtube {
+      display: block;
+      padding: 13px;
+      background-color: #fe7f88;
+    }
+    &__footer--p--upper {
+      padding: 6px;
+      display: inline-block;
+      padding: 16px;
+      background: #92140c;
+    }
+    &__section--h3 {
+      color: #a663cc;
+    }
+    &__section--h2 {
+      color: #a663cc;
+    }
+    &__section--h1 {
+      color: #a663cc;
+    }
+    &__section:hover {
+      background-color: hotpink;
+    }
+    &__section {
+      background: #6f2dbd;
+      color: #b8d0eb;
+    }
+    &__section--h3:first-child {
+      background: yellow;
+    }
+    &__section--h3:last-child {
+      background: greenyellow;
+    }
+    &__section--h3:not(.body__section--i) {
+      background: turquoise;
+    }
+    &__picture {
+      display: block;
+      max-width: 100%;
+      padding: 13px;
+      border: 8px;
+      border-radius: 3px;
+    }
+    &__p {
+      color: #b298dc;
+    }
+    &__h5 {
+      color: #b298dc;
+    }
+    &__h4 {
+      color: #b298dc;
+    }
+    &__h6 {
+      color: #b8d0eb;
+      background-color: #a663cc;
+    }
+    &__article {
+      color: #b8d0eb;
+    }
+    &__section--h3::after {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: tomato;
+      border-radius: 50%;
+    }
+    &__section--h3::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: tomato;
+      border-radius: 50%;
+    }
+    &__p {
+      font-size: 1.5em;
+      color: #fe7f88;
+      background-color: transparent;
+    }
+    &__div {
+      background-image: url("https://th.bing.com/th/id/OIP.cstklqjr-mZbxRSe1HOr5AHaEq?pid=Api&rs=1");
+    }
+    &__p {
+      background-image: none;
+      color: #a663cc;
+      background-color: #6f2dbd;
+    }
+    &__p--stonoga {
+      background-image: url("https://thumbs.gfycat.com/SeveralBraveGalago-size_restricted.gif");
+    }
+    &__p--cats {
+      background-image: url("https://mdn.mozillademos.org/files/7693/catfront.png");
+      background-color: transparent;
+    }
+  }

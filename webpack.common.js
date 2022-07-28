@@ -94,5 +94,48 @@ module.exports = {
       chunks: ["index"],
       filename: "Mateusz.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/cool.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "cool.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/cursor.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "cursor.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/flex.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "flex.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/forms.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "forms.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/grid.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "grid.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/grid_layout.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "grid_layout.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/lol test.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "lol test.html",
+    }),
+    
   ],
 };
