@@ -6,6 +6,12 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
+    default:"./src/js/default.js",
+    forms:'./src/js/forms.js',
+    hello:'./src/js/hello.js',
+    js:'./src/js/js.js',
+    pwa:'./src/js/pwa.js',
+    test:'./src/js/test.js',
   },
   output: {
     filename: "[name].[hash:8].js",
