@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background: #2e2240;
+    color: #fff;
+  }
+  .flex {
+    border: 4px solid #ee0c21;
+    /* min-height: 100vh; */
+    /*dla kolumn lepiej mieć wys na sztywnosc zeby wrap dzialal*/
+    display: flex;
+    height: 100vh;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* to samo co direction row i wrap*/
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+  }
+  .flex__item {
+    border: 3px solid #fff;
+    padding: 16px;
+    text-align: center;
+    background: #ffc835;
+    color: #642677;
+    font-weight: bold;
+    font-size: 20px;
+    flex-basis: 150px;
+    width: 100px;
+    order: 2;
+    flex: 1 0 150px;
+  }
+  .flex__item--bigger {
+    font-size: 50px;
+  
+    flex-shrink: 2;
+  }
+  .flex__item--centered {
+    align-self: center;
+    order: -1;
+  }
+  

@@ -1,0 +1,134 @@
+.body__alias {
+    cursor: alias;
+  }
+  .body__all-scroll {
+    cursor: all-scroll;
+  }
+  .body__auto {
+    cursor: auto;
+  }
+  .body__cell {
+    cursor: cell;
+  }
+  .body__context-menu {
+    cursor: context-menu;
+  }
+  .body__col-resize {
+    cursor: col-resize;
+  }
+  .body__copy {
+    cursor: copy;
+  }
+  .body__crosshair {
+    cursor: crosshair;
+  }
+  .body__default {
+    cursor: default;
+  }
+  .body__e-resize {
+    cursor: e-resize;
+  }
+  .body__ew-resize {
+    cursor: ew-resize;
+  }
+  .body__grab {
+    cursor: grab;
+  }
+  .body__grabbing {
+    cursor: grabbing;
+  }
+  .body__help {
+    cursor: help;
+  }
+  .body__move {
+    cursor: move;
+  }
+  .body__n-resize {
+    cursor: n-resize;
+  }
+  .body__ne-resize {
+    cursor: ne-resize;
+  }
+  .body__nesw-resize {
+    cursor: nesw-resize;
+  }
+  .body__ns-resize {
+    cursor: ns-resize;
+  }
+  .body__nw-resize {
+    cursor: nw-resize;
+  }
+  .body__nwse-resize {
+    cursor: nwse-resize;
+  }
+  .body__no-drop {
+    cursor: no-drop;
+  }
+  .body__none {
+    cursor: none;
+  }
+  .body__not-allowed {
+    cursor: not-allowed;
+  }
+  .body__pointer {
+    cursor: pointer;
+  }
+  .body__progress {
+    cursor: progress;
+  }
+  .body__row-resize {
+    cursor: row-resize;
+  }
+  .body__s-resize {
+    cursor: s-resize;
+  }
+  .body__se-resize {
+    cursor: se-resize;
+  }
+  .body__sw-resize {
+    cursor: sw-resize;
+  }
+  .body__text {
+    cursor: text;
+  }
+  .body__url {
+    cursor: url(myBall.cur), auto;
+  }
+  .body__w-resize {
+    cursor: w-resize;
+  }
+  .body__wait {
+    cursor: wait;
+  }
+  .body__zoom-in {
+    cursor: zoom-in;
+  }
+  .body__zoom-out {
+    cursor: zoom-out;
+  }
+  .body {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: list-item;
+    background-color: #65def1;
+    color: #f96900;
+  }
+  .body__box {
+    display: block;
+    background-color: #dce2c8;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .head__nav {
+    background-color: #f17f29;
+    display: inline-block;
+    left:50px;
+  
+  }
+  .head{
+      display: inline-block;
+      margin:13px 14px 15px 16px;
+      
+  }
+  

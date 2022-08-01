@@ -1,0 +1,36 @@
+widhtml {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: #302140;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f8f8f8;
+  }
+  .main {
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    width: 624px;
+    margin: 16px;
+    padding: 32px;
+  }
+
+  .form__item {
+    display: block;
+    width: 100%;
+  }
+  .form label {
+    display: block;
+  }
+  .form textarea {
+    width: 100%;
+    height: 500px;
+  }
+  

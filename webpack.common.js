@@ -12,6 +12,10 @@ module.exports = {
     js:'./src/js/js.js',
     pwa:'./src/js/pwa.js',
     test:'./src/js/test.js',
+    grid:'./src/js/grid.js',
+    grid_layout:'./src/js/grid_layout.js',
+    flex:'./src/js/flex.js',
+
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -121,7 +125,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/forms.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index","forms"],
       filename: "forms.html",
     }),
     new HtmlWebpackPlugin({
