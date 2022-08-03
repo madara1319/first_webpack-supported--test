@@ -1,0 +1,1 @@
+body{background:#92ce92;color:#333}.grid{display:grid;grid-template-columns:1fr minmax(200px,1fr);-moz-column-gap:16px;column-gap:16px;row-gap:16px}.grid_element{background:tomato;padding:20px;color:#fff;display:grid}
