@@ -15,6 +15,7 @@ module.exports = {
     grid:'./src/js/grid.js',
     grid_layout:'./src/js/grid_layout.js',
     flex:'./src/js/flex.js',
+    moment:'./src/js/moment.js',
 
   },
   output: {
@@ -89,7 +90,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index","moment"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
