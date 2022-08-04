@@ -1,0 +1,1 @@
+:root{--small-padding:8px solid;--text-color:#3b013b;--background-color:#ffb6c1}body{color:var(--text-color);background-color:var(--background-color)}h1{padding:var(--small-padding)}a{color:var(--text-color)}@media(min-width:768px){:root{--small-padding:16px}}
