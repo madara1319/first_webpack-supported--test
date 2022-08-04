@@ -16,6 +16,7 @@ module.exports = {
     grid_layout:'./src/js/grid_layout.js',
     flex:'./src/js/flex.js',
     moment:'./src/js/moment.js',
+    lightchange:'./src/js/lightchange.js',
 
   },
   output: {
@@ -146,6 +147,12 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "lol test.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/lightchange.html",
+      inject: true,
+      chunks: ["lightchange"],
+      filename: "lightchange.html",
     }),
     
   ],
