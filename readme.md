@@ -2,7 +2,7 @@
 
 # My First attemp on learning frontend development 
 
-Website created using WTF Webpack Starter Kit
+Website created using WTF Webpack Starter Kit :)
 
 ## WTF Webpack Starter Kit 
 
