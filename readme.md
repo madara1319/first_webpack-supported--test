@@ -1,4 +1,4 @@
-![cover]([https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2284.jpg?w=826&t=st=1663867956~exp=1663868556~hmac=0a0f66f8d18d7175cd510c45c5cdff7be9efa0193bc3632ae778c2bc052cef51])
+![image](https://user-images.githubusercontent.com/62306827/191814326-bdd006e9-f490-43aa-a8b2-36a54a05b8fd.png)
 
 # My First attemp on learning frontend development 
 
