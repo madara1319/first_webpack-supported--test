@@ -1,6 +1,10 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# My First attemp on learning frontend development 
+
+Website created using WTF Webpack Starter Kit
+
+## WTF Webpack Starter Kit 
 
 Simple toolkit for your static websites development.
 
